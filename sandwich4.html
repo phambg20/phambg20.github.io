@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .div-1 {
+            margin-left: 13%;
+            margin-right: 13%;
+            font-family: fantasy;
+            text-align: center;
+            border-style:groove;
+            background-color:wheat;
+            border-width: thick;
+        }
+        .div-2 {
+            margin-left: 20%;
+            margin-right: 20%;
+            border-color:wheat;
+            border-style: double;
+            border-width: thick;
+        }
+        .div-3 {
+            margin-left: 5%;
+            margin-right: 5%;
+            background-color:wheat;
+            text-align: center;
+            font-family: fantasy;
+            border-style: groove;
+            border-width: thick;
+        }
+        table, tr, td {
+            border: 1px solid black;
+            background-color: white;
+        }
+        .header {
+            font-family:fantasy;
+            text-align: center;
+        }
+        h2 {
+            color:navy;
+            font-family:cursive;
+        }
+        h3 {
+            color: firebrick;
+            font-family: cursive;
+        }
+    </style>
+    <title>Submaruffer's Sandwiches</title>
+    <h1 class="div-1"><p style=font-size:larger><u>SUBMARUFFER'S SANDWICHES</u></p></h1>
+    <div class="div-2"><p style="color:tan;text-align: center;font-size: larger;font-family: cursive;"><b>ARGHHH! Welcome aboard our ship, home to sea dogs from all seven seas.<br>Can you tame these watery beasts of a sub? Test your skills as a pirate and find out!<br> ARGHHH!</b></p></div>
+    <br>
+</head>
+<!--Pham, 10/03/2022, Assignment #4, HTML forms webpage-->
+<body style="background-color: cornsilk;">
+<hr>
+<p><a href="#Go to Top" id="Go to Bottom">Go to Bottom</a></p>
+<h1 class="header"><u>General Information</u></h1>
+<h2><u>Customer</u></h2>
+    <p>
+    <table style="width: 25%;">
+    <tr>
+        <td>
+        <form>
+            <label>First Name</label></td>
+            <td style="width: 50%;"><input type="text"></td>
+    </tr>
+    <tr>
+        <td>
+            <label>Last Name</label></td>
+            <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>
+            <label>Phone Number</label></td>
+            <td><input type="text"></td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Street Address</label></td>
+            <td><input type="text"></td>
+        </td>
+    </tr>
+    </table>
+</p>
+<h2><u>Delivery</u></h2>
+<p>
+    Delivery Options:<br>
+        <input type="radio" name="deliveryoptions" value="delivery"> Delivery
+        <input type="radio" name="deliveryoptions" value="pickup">Pickup
+        <input type="radio" name="deliveryoptions" value="dine-in"> Dine-In<br>
+<br>
+    Special Delivery Instructions: <br>
+        <textarea name="instructions" rows="4" cols="40">Enter Instructions Here</textarea>
+</p>
+<h2><u>Quantity</u></h2>
+<p>
+    <label for="quantity">How many subs would you like?</label><br>
+    <input type="text" value="Type Here">
+</p> <br>
+<hr>
+<h1 class="header"><u>Build the Sandwich</u></h1>
+<p style="text-align: center;">If you would like to skip this process, and purchase a specialty sub, please click <a href="#Specialty Subs" id="here">here.</a></p>
+<h2><u>Bread</u></h2>
+<p>
+    <label for="lengths">Choose a length for your sub:</label>
+    <select name="lengths" id="lengths">
+        <option>Select</option>
+        <option>Quarter Sub</option>
+        <option>Half Sub</option>
+        <option>Dog Long</option>
+        <option>2 Dogs Long</option>
+    </select>
+</p>
+<p>
+    Pick a type of bread: <br>
+        <input type="radio" name="station1" value="italian"> Italian <br>
+        <input type="radio" name="station1" value="multigrain"> Multigrain <br>
+        <input type="radio" name="station1" value="rye"> Rye <br>
+        <input type="radio" name="station1" value="white"> White <br>
+        <input type="radio" name="station1" value="wholewheat"> Whole Wheat <br>
+</p>
+<p>
+    Would you like it toasted? <br>
+        <input type="radio" name="toast" value="yes"> Yes
+        <input type="radio" name="toast" value="no"> No
+</p>
+<h2><u>Toppings</u></h2>
+<p>
+    You can customize your own personalized sub or select a premade sub in our specialty section.
+</p>
+<h3><u>1. Proteins</u></h3>
+<p>
+    First, give your dog some protein. <br>
+        <br>
+        <input type="checkbox" name="station2" value="bacon"> Bacon
+        <input type="checkbox" name="station2" value="chicken"> Chicken
+        <input type="checkbox" name="station2" value="ham"> Ham
+        <input type="checkbox" name="station2" value="meatballs"> Meatballs
+        <input type="checkbox" name="station2" value="pepperoni"> Pepperoni <br>
+        <input type="checkbox" name="station2" value="roastbeef"> Roast Beef
+        <input type="checkbox" name="station2" value="steak"> Steak
+        <input type="checkbox" name="station2" value="tofu"> Tofu
+        <input type="checkbox" name="station2" value="tuna"> Tuna
+        <input type="checkbox" name="station2" value="turkey"> Turkey
+</p>
+<h3><u>2. Cheeses</u></h3>
+<p>
+    Second, give it some of its favorite treat, cheese! <br>
+        <br>
+        <input type="checkbox" name="station3" value="american"> American
+        <input type="checkbox" name="station3" value="asiago"> Asiago <br>
+        <input type="checkbox" name="station3" value="cheddar"> Cheddar
+        <input type="checkbox" name="station3" value="mozzarella"> Mozzarella <br>
+        <input type="checkbox" name="station3" value="parmesan"> Parmesan
+        <input type="checkbox" name="station3" value="pepperjack"> Pepper Jack <br>
+        <input type="checkbox" name="station3" value="provolone"> Provolone 
+        <input type="checkbox" name="station3" value="swiss"> Swiss
+</p>
+<h3><u>3. Vegetables</u></h3>
+<p>
+    Third, keep your dog healthy with some vegetables. <br>
+    <br>
+    <input type="checkbox" name="station4" value="avocado"> Avocado
+    <input type="checkbox" name="station4" value="bellpepper"> Bell Pepper
+    <input type="checkbox" name="station4" value="carrot"> Carrot
+    <input type="checkbox" name="station4" value="cucumber"> Cucumber
+    <input type="checkbox" name="station4" value="jalape&ntilde;opeppers"> Jalape&ntilde;o Peppers <br>
+    <input type="checkbox" name="station4" value="lettuce"> Lettuce
+    <input type="checkbox" name="station4" value="pickles"> Pickles
+    <input type="checkbox" name="station4" value="onion"> Onion
+    <input type="checkbox" name="station4" value="spinach"> Spinach
+    <input type="checkbox" name="station4" value="tomato"> Tomato
+</p>
+<h3><u>4. Sauces</u></h3>
+<p>
+    Finally, give the dog a bath with some sauce. <br>
+    <br>
+    <input type="checkbox" name="station5" value="mustard"> A Scurvy Man's Likeness (Honey Mustard) <br>
+    <input type="checkbox" name="station5" value="bbqsauce"> Chum the Waters (BBQ Sauce) <br>
+    <input type="checkbox" name="station5" value="onion"> Crushed Sea Kelp (Sweet Onion) <br>
+    <input type="checkbox" name="station5" value="mayo"> Great White Sauce (Mayonnaise) <br>
+    <input type="checkbox" name="station5" value="ranch"> Oyster Pearls (Ranch) <br>
+    <input type="checkbox" name="station5" value="breath"> Pirate's Breath (Garlic Aioli) <br>
+    <input type="checkbox" name="station5" value="cheese"> Sea Foam (Blue Cheese) <br>
+    <input type="checkbox" name="station5" value="hotsauce"> Walk the Plank (Hot Sauce)
+</p> <br>
+<hr>
+<h1 class="header"><u>Extras</u></h1>
+<h2 id="Specialty Subs"><u>Specialty Subs</u></h2>
+<p>
+    Choose a premade sub if you don't want to customize your own.<br> All of these subs come standard with lettuce, tomato, onion and cucumber unless stated otherwise. <br> 
+    <br>
+        <input type="radio" name="special" value="bilgewater"> Bilgewater (Warm Steak with Melted Cheese) <br>
+        <input type="radio" name="special" value="brineydeep"> Briney Deep (Tuna) <br>
+        <input type="radio" name="special" value="crownest"> Crow's Nest (Roast Chicken) <br>
+        <input type="radio" name="special" value="kelpforest"> Kelp Forest (Tofu) <br>
+        <input type="radio" name="special" value="landlubber"> Landlubber (Ham) <br>
+        <input type="radio" name="special" value="manatee"> Manatee (Roast Beef) <br>
+        <input type="radio" name="special" value="scallywag"> Scallywag (Turkey) <br>
+        <input type="radio" name="special" value="7seas"> The Seven Seas (Turkey, Ham, and Roast Beef) <br>
+        <input type="radio" name="special" value="tidepool"> Tidepool (Warm Turkey, Ham, and Bacon with Melted Cheese) <br>
+</p>
+<p>
+    Special Preparation Instructions: <br>
+        <textarea name="instructions" rows="4" cols="40">Enter Instructions Here</textarea>
+</p>
+<h2><u>Sides and/or Desserts</u></h2>
+<p>
+    <label for="chips">You can choose a side of chips with your subs: </label> <br>
+    <select name="chips" id="chips">
+        <option>Select</option>
+        <option>Barbecue</option>
+        <option>Hot & Spicy</option>
+        <option>Pickle</option>
+        <option>Ranch</option>
+        <option>Regular</option>
+        <option>Salt & Vinegar</option>
+        <option>Sour Cream & Onion</option>
+    </select>
+</p>
+    <label for="desserts">You can choose a cookie to finish your meal: </label> <br>
+    <select name="cookies" id="cookies">
+        <option>Select</option>
+        <option>Chocolate Chip</option>
+        <option>Lemon</option>
+        <option>Peanut Butter</option>
+        <option>Snickerdoodle</option>
+        <option>Sugar</option>
+    </select>
+<h2><u>Drinks</u></h2>
+<p>
+    You can choose a drink to accompany your food. <br> <br>
+    <label for="drinksize">Drink Size: </label>
+    <select name="drinksize" id="srinksize">
+        <option>Select</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>Extra Large</option>
+    </select> <br><br>
+    <label for="drinks">Soft Drinks: </label>
+    <select name="softdrinks" id="softdrinks">
+        <option>Select</option>
+        <option>Coke</option>
+        <option>Dr. Pepper</option>
+        <option>Fanta</option>
+        <option>Ginger Ale</option>
+        <option>Mountain Dew</option>
+        <option>Sprite</option>
+    </select> <br> <br>
+    <label for="drinks">Regular Drinks: </label>
+    <select name="regdrinks" id="regdrinks">
+        <option>Select</option>
+        <option>Apple Juice</option>
+        <option>Cranberry Juice</option>
+        <option>Gatorade</option>
+        <option>Iced Tea</option>
+        <option>Lemonade</option>
+        <option>Orange Juice</option>
+        <option>Water</option>
+    </select>
+</p> <br>
+<hr>
+<h1 class="header"><u>Finish the Order</u></h1>
+<h2><u>Notification</u></h2>
+<p>
+    How would you like to be notified when your sub is ready? <br>
+    <br>
+    <input type="radio" name="notify" value="textmsg"> Text Message <br>
+    <input type="radio" name="notify" value="phone"> Phone Call <br>
+    <input type="radio" name="notify" value="email"> Email <br>
+    <input type="radio" name="notify" value="all"> All <br>
+    <input type="radio" name="notify" value="other"> Other:
+    <input type="text" name="notify" value="Type Here">
+</p>
+<p>
+    If you would an email notification, enter your email address here: <br>
+    <input type="text" name="notify" value="Type Here">
+</p>
+<p>
+    <input type="reset" value="Clear Order"><br>
+    <br> <br>
+    <input type="submit" value="Order"><br>
+</p>
+<p><a href="#Go to Bottom" id="Go to Top">Go to Top</a></p>
+</form>
+<hr>
+</body>
+<footer>
+    <div class="div-3"><p>Thanks for choosing one of Submaruffer's dogs!</p></div>
+</footer>
+</html>
