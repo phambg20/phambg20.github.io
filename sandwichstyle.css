@@ -1,0 +1,36 @@
+body {
+    background-image: url(parchment.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div-1 {
+    margin-left: 13%;
+    margin-right: 13%;
+    font-family: fantasy;
+    text-align: center;
+    border-style:groove;
+    background-color:wheat;
+    border-width: thick;
+    background-image: url(parchment.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div-2 {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-color:peru;
+    border-style: double;
+    border-width: thick;
+}
+.div-3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:wheat;
+    text-align: center;
+    font-family: fantasy;
+    border-style: groove;
+    border-width: thick;
+    background-image: url(parchment.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
