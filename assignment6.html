@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All About Your POE</title>
+        <script>
+            function glue ()
+            {
+                document.querySelector("#degree").value = 
+                        document.querySelector("#poe").value
+                    + " with "
+                    + document.querySelector("#spoe").value
+            }
+            function poename ()
+            {
+                document.querySelector("#changeText").innerHTML =
+                "My POE is " + document.querySelector("#poe").value;
+            }
+            function humanities ()
+            {
+                alert ("In theory, there is no difference between theory and practice, but in practice, there is.")
+            }
+            function stem ()
+            {
+                alert ("Bacteria is the only culture some people have.")
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Tell me about your POE</h2>
+        <div id="changeText">
+            What is your POE?
+        </div> <br>
+        <form name=inclass>
+          Program of Emphasis: <input type=text id="poe"
+                            onchange="poename();"> <br>
+          Secondary Emphasis:  <input type=text id="spoe" 
+                            onchange="glue();"><br>
+          Degree Name:  <input type=text id="degree"> <br>
+
+          <p>
+            What type of degree are you getting? <br>
+            <input type="checkbox" name="poetype" value="arts" onclick="humanities()"> The Arts <br>
+            <input type="checkbox" name="poetype" value="science" onclick="stem()"> Science <br>
+            <input type="checkbox" name="poetype" value="undergrad"> Undergraduate Degree <br>
+            <input type="checkbox" name="poetype" value="grad"> Graduate/Master's Degree
+          </p>
+          <input type=reset value="Clear Answers">
+        <br>
+        </form>
+     </body>
+</html>
