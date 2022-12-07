@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript practice</title>
+        <script>
+            var numClicks;
+            numClicks = 0;
+            function countClicks ()
+            {
+                numClicks++;
+                alert ("You have clicked "+numClicks+"times");
+            }
+        </script>
+    </head>
+    <body>
+        <form name="inclass">
+            <input type="button"
+                   name="counter"
+                   value="Click Counter"
+                   onclick="countClicks();">
+        </form>
+    </body>
+</html>

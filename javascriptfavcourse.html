@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Practice</title>
+        <script>
+            function favCourse ()
+            {
+                if (document.querySelector("#course").value =="it105" ||
+                    document.querySelector("#course").value =="IT105")
+                {
+                    alert("Hey, great choice!");
+                }   else {
+                    alert("Maybe choose a different course?");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="inclass">
+            Enter your favorite course: <input type="text" 
+                                               id="course" 
+                                               onchange="favCourse();">
+        </form>
+    </body>
+</html>

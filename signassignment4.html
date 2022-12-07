@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="chocolate.css">
+        <title>CU | Take Our Survey |</title>
+        <script>
+                function glue ()
+                    {
+                    document.querySelector("#full").value = 
+                        document.querySelector("#first").value
+                        + " "
+                        + document.querySelector("#last").value
+                    }
+                function interestname ()
+                    {
+                    document.querySelector("#changeText").innerHTML =
+                    "My main interest is " + document.querySelector("#maininterest").value
+                    }
+                function phonetext () {
+                    var checkBox = document.getElementById("phonecheck");
+                    var text = document.getElementById("phonenumber");
+                    if (checkBox.checked == true){
+                        text.style.display = "block";} 
+                    else {
+                        text.style.display = "none";
+                         }
+                    }
+                function emailtext () {
+                    var checkBox = document.getElementById("emailcheck");
+                    var text = document.getElementById("emailaddress");
+                    if (checkBox.checked == true){
+                        text.style.display = "block";} 
+                    else {
+                        text.style.display = "none";
+                         }
+                    }
+                function homeaddresstext () {
+                    var checkBox = document.getElementById("homecheck");
+                    var text = document.getElementById("homeaddress");
+                    if (checkBox.checked == true){
+                        text.style.display = "block";} 
+                    else {
+                        text.style.display = "none";
+                         }
+                    }
+        </script>
+        <style>
+            body {
+                background-image: url(hpark.jpeg);
+                background-repeat: no-repeat;
+                background-size: 1200px 190px;
+            }
+            p {
+                color: darkslategrey;
+                margin-left: 10px;
+            }
+            h3 {
+                color: darkslategrey;
+                margin-left: 10px;
+            }
+            table {
+                color: darkslategrey;
+                margin-left: 10px;
+            }
+            .background-image {
+                margin-right: 0px;
+            }
+            .div-1 {
+                border-style: ridge;
+                border-width: thick;
+                text-align: center;
+                border-color:dimgray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="div-1" style="color: white;"><b>CHOCOLATETOWN UNIVERSITY</b></h1> 
+<div class="navbar">
+    <a href="signassignment.html">Home</a>
+    <div class="subnav">
+        <button class="subnavbtn">About</button>
+    <div class="subnav-content">
+      <a href="signassignment2.html">Message</a>
+    </div>
+</div>
+    <div class="subnav">
+        <button class="subnavbtn">Academics</button>
+    <div class="subnav-content">
+        <a href="signassignment3.html">Degrees & Programs</a>
+        <a href="signassignment4.html">Feedback</a>
+        </div>
+      </div>
+</div>
+<br>
+<p style="font-size: xx-large;color:saddlebrown;">
+    Prospective Student Feedback
+</p>
+<p style="margin-left: 10px;">
+    We appreciate all the feedback that comes to us. We also appreciate all the
+    prospective students, parents, and guardians <br> that take a look at our 
+    institution. Please take some time to tell us about yourself.
+</p>
+<h3>Who is viewing our website?</h3>
+<form>
+    <p>
+        <table style="width: 20%;">
+        <tr>
+            <td>
+            <form name="prospectsurvey">
+                <label>First Name</label></td>
+                <td style="width: 50%;"><input type="text" id="first" onchange="glue();"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Last Name</label></td>
+                <td><input type="text" id="last" onchange="glue();"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Full Name</label></td>
+                <td><input type="text" id="full"></td>
+            </td>
+        </tr>
+        </table>
+    </p>
+    <p>
+        What is your status? <br>
+        <input type="radio" name="status" value="highschool"> High School Student <br>
+        <input type="radio" name="status" value="transfer"> Transfer Student <br>
+        <input type="radio" name="status" value="prospectivestudent"> Prospective Student <br>    
+        <input type="radio" name="status" value="parent"> Parent/Guardian <br>
+    </p>
+    <h3>What are you interested in studying?</h3>
+    <div id="changeText" style="margin-left: 10px; color: darkslategray;">
+        What is your main interest?
+    </div>
+    <p>
+        Primary Interest:
+                <input type="text" id="maininterest" 
+                            onchange="interestname()"> <br>
+        Secondary Interest:
+                <input type="text" id="secondinterest">
+    </p>
+    <h3>Where are you from?</h3>
+    <p>
+        City:
+                <input type="text" name="city"> <br>
+        State/Country:
+                <input type="text" name="state">
+    </p>
+    <h3>How did you hear about us?</h3>
+    <p>
+        Select all that apply: <br>
+        <br>
+        <input type="checkbox" name="discovery" value="admissionsofficer"> Admissions Officer <br>
+        <input type="checkbox" name="discovery" value="advertisement"> Advertisement <br>
+        <input type="checkbox" name="discovery" value="alumni"> Alumni <br>
+        <input type="checkbox" name="discovery" value="collegeboard"> College Board <br>
+        <input type="checkbox" name="discovery" value="currentstudent"> Current Student <br>
+        <input type="checkbox" name="discovery" value="guidancecounselor"> Guidance Counselor <br>
+        <input type="checkbox" name="discovery" value="other"> Other:
+        <input type="text" name="discovery">
+    </p>
+    <h3>Would you like to keep in touch about updates and admissions events from our university?</h3>
+    <p>
+        Select all that apply: <br>
+        <label for="phonenumber">Phone Number:</label> 
+        <input type="checkbox" id="phonecheck" onclick="phonetext()">
+        <p id="phonenumber" style="display:none">
+            Please provide your phone number here:
+            <input type="text" name="phonenumber">
+        </p>
+    </p>
+    <p>
+        <label for="email">Email Address:</label> 
+        <input type="checkbox" id="emailcheck" onclick="emailtext()">
+        <p id="emailaddress" style="display:none">
+            Please provide your email address here:
+            <input type="text" name="emailaddress">
+        </p>
+    </p>
+    <p>
+        <label for="homeaddress">Mail:</label> 
+        <input type="checkbox" id="homecheck" onclick="homeaddresstext()">
+        <p id="homeaddress" style="display:none">
+            Please provide your home address here:
+            <input type="text" name="homeaddress">
+        </p>
+    </p>
+    <input type="reset" name="resetsurvey" style="margin-left: 10px;"><br>
+    <br>
+    <input type="submit" name="submitsurvey" style="margin-left: 10px;"><br>
+    <br>
+</form>
+    </body>
+</html>
