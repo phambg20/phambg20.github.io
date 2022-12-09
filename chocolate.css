@@ -1,37 +1,118 @@
 body {
     background-color:silver;
 }
-.div-1 {
-    margin-left:0%;
+.university {
+    margin-left:10px;
     margin-right:53%;
-    font-family: cursive;
     background-color: saddlebrown;
+    border-style: ridge;
+    border-width: thick;
+    text-align: center;
+    border-color:dimgray;
 }
-.div-3 {
+.motto {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    width: 30%;
+    border-style: double;
+    border-width: thick;
+}
+.master {
     border-style: double;
     margin-left: 35px;
-    margin-bottom: 750px;
+    margin-bottom: 600px;
     background-color: white;
 }
-.div-4 {
+.undergrad {
     border-style: double;
     margin-left: 10px;
     background-color:white;
 }
-.div-5 {
+.doctorate {
     border-width: thick;
     border-style: double;
     margin-right: 10px;
     background-color:white;
 }
+.message {
+    border-style:groove;
+    border-width: thick;
+    text-align: center;
+    border-color: saddlebrown;
+    line-height: 150%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.students {
+    border-style: double;
+    border-width: thick;
+    text-align: center;
+    border-color: saddlebrown;
+    margin-left: 10px;
+    margin-right: 65%;
+    color: saddlebrown;
+    background-color: silver;
+}
+.degrees {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    border-style: double;
+    border-width: thick;
+    text-align: center;
+    border-color: saddlebrown;
+    color: saddlebrown;
+    background-color: silver;
+    width:23%;
+}
+.slogan {
+    border-style: double;
+    border-width: thick;
+    text-align: center;
+    border-color: saddlebrown;
+    color: saddlebrown;
+    background-color: silver;
+    width: 65%;
+    margin-left: 30%;
+    margin-right:10px;
+    margin-top:2%;
+    margin-bottom: 20px;
+}
+.land {
+    border-style: double;
+    border-width: thick;
+    text-align: center;
+    border-color: saddlebrown;
+    color: saddlebrown;
+    background-color: silver;
+    margin-left: 67%;
+    margin-right:10px;
+    margin-top: 4.5%;
+}
+.capital {
+    display: block;
+    float: left;
+    border-style: double;
+    border-width: thick;
+    text-align: center;
+    border-color: saddlebrown;
+    color: saddlebrown;
+    background-color: silver;
+    width:23%;
+    margin-left: 10px;
+    margin-top:1%;
+}
 .navbar {
     overflow: hidden;
     background-color:saddlebrown;
-    width: 20.48%;
+    width: 20.8%;
     border-style:ridge;
     border-width: thick;
     border-color: dimgray;
-    font-family: cursive;
+    margin-left: 10px;
 }
 .navbar a {
     float: left;
